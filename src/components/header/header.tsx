@@ -1,5 +1,21 @@
-import Styles from "./header.module.scss";
+import Styles from "../../App.module.scss";
 
-export default function Header() {
-  return <header className={Styles["app-header"]}>Contacts</header>;
+interface Props {
+  loginState: boolean;
+  updateLoginState: (state: boolean) => void;
+}
+
+export default function Header(props: Props) {
+  const { loginState, updateLoginState } = props;
+
+  function logout() {
+    updateLoginState(false);
+  }
+
+  return (
+    <header className={Styles["App-header"]}>
+      <div>Contacts App</div>
+      {loginState && <button onClick={logout}>logout</button>}
+    </header>
+  );
 }

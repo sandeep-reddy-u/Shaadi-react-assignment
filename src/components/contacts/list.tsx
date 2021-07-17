@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ContactItem from "./item";
 import { ContactAPIResponse, User } from "../../interfaces/common-interface";
 import Styles from "./list.module.scss";

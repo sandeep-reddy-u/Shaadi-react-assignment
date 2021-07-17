@@ -1,0 +1,21 @@
+@import "./styles/variables";
+
+.App {
+  text-align: center;
+  font-size: clamp(14px, 2vmin, 1.5rem);
+}
+
+.App-header {
+  height: $headerHeight;
+  background-color: $theme-color;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 0px 3%;
+}
+
+.App-container {
+  height: calc(100vh - #{$headerHeight});
+}

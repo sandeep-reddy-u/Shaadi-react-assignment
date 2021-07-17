@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+.login-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $theme-color;
+    padding: 1rem 3rem;
+    text-align: left;
+
+    label {
+      padding: 1rem 0;
+      font-size: large;
+    }
+
+    input {
+      padding: 1rem;
+      width: clamp(120px, 25vw, 250vw);
+    }
+
+    button {
+      background-color: $theme-color;
+      color: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-color: $theme-color;
+    }
+
+    .error {
+      color: rgb(235, 38, 38);
+      padding: 5px;
+    }
+  }
+}

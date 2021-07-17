@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .list-container {
-  height: calc(100vh - #{$headerHeight});
+  height: 100%;
   overflow: auto;
 
   .contact-item {
