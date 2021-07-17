@@ -20,8 +20,8 @@ function LoginPage(props: Props) {
       passwordRef.current?.validity.valid
     ) {
       if (
-        usernameRef.current.value === "Test" &&
-        passwordRef.current.value === "Test@123"
+        usernameRef.current.value === "foo" &&
+        passwordRef.current.value === "bar"
       ) {
         await updateLoginState(true);
       } else {

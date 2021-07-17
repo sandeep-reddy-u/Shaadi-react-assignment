@@ -70,14 +70,12 @@ describe("Login form should ", () => {
     const usernameElement = screen.getByLabelText(
       "Username"
     ) as HTMLInputElement;
-    fireEvent.change(usernameElement, { target: { value: "Test" } });
-    // expect(usernameElement.value).toBe("Test");
+    fireEvent.change(usernameElement, { target: { value: "foo" } });
 
     const passwordElement = screen.getByLabelText(
       "Password"
     ) as HTMLInputElement;
-    fireEvent.change(passwordElement, { target: { value: "Test@123" } });
-    // expect(passwordElement.value).toBe("Test@123");
+    fireEvent.change(passwordElement, { target: { value: "bar" } });
 
     fireEvent.click(loginButton);
     await waitFor(() => expect(mockUpdateLoginState).toHaveBeenCalledTimes(1));
