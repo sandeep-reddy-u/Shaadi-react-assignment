@@ -37,5 +37,37 @@
     position: fixed;
     right: 5vw;
     bottom: 5vh;
+    display: flex;
+    align-items: center;
+    .icon {
+      height: 5vh;
+      width: 5vh;
+      border-radius: 50%;
+      border: 5px solid #eaeaea;
+      border-top: 5px solid $theme-color;
+      animation: spin 2s linear infinite;
+      -webkit-animation: spin 2s linear infinite;
+      margin-right: 10px;
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

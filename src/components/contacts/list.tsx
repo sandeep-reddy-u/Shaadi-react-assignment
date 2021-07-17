@@ -44,7 +44,12 @@ export default function ContactList() {
       {list.map((user: User) => (
         <ContactItem user={user} key={user.login.username} />
       ))}
-      {loading && <div className={Styles.loading}>Loading ...</div>}
+      {loading && (
+        <div className={Styles.loading}>
+          <div className={Styles.icon} />
+          <div>Loading</div>
+        </div>
+      )}
     </div>
   );
 }
