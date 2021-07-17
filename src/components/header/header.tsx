@@ -15,7 +15,7 @@ export default function Header(props: Props) {
   return (
     <header className={Styles["App-header"]}>
       <div>Contacts App</div>
-      {loginState && <button onClick={logout}>logout</button>}
+      {loginState && <button onClick={logout}>Logout</button>}
     </header>
   );
 }

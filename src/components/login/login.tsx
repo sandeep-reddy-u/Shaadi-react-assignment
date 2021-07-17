@@ -44,6 +44,7 @@ function LoginPage(props: Props) {
           ref={usernameRef}
           name="username"
           id="username"
+          data-testid="username"
           placeholder="Enter username here..."
           required={true}
           onChange={handleChange}
@@ -54,6 +55,7 @@ function LoginPage(props: Props) {
           ref={passwordRef}
           name="password"
           id="password"
+          data-testid="password"
           type="password"
           placeholder="Enter password here..."
           required={true}
